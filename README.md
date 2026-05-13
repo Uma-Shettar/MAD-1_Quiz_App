@@ -1,4 +1,4 @@
-# quiz-master-app
+# MAD-1_Quiz_App
 It is a app that acts as an exam preparation site for multiple courses.
 
 This project involves creating a platform with two roles: Admin (the superuser who 
