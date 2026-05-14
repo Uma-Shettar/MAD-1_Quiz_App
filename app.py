@@ -1,7 +1,6 @@
-
-from flask import Flask, render_template
-from controllers.database import *
-from controllers.config import config
+from flask import Flask
+from database import *
+from config import config
 from datetime import datetime
 
 app = Flask(__name__)
@@ -24,9 +23,9 @@ with app.app_context():
         db.session.add(user_admin)
     db.session.commit()
 
-from controllers.authentication import *
-from controllers.routes import *
-from controllers.edit_routes import *
+from authentication import *
+from routes import *
+from edit_routes import *
 
 if __name__ == "__main__":
     app.run(debug=True)

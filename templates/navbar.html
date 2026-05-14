@@ -49,7 +49,7 @@
         
         {% if session.get('user_role', None)%}
           </ul>
-          <form class="d-flex" role="search" action="{{url_for('search')}}">
+          <form class="d-flex" role="search" action="{{ url_for('search') }}">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
             {% if session.get('user_role', None) == 'admin' %}
               <select class="form-select me-2" aria-label="Default select example" name="search_type">
